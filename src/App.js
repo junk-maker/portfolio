@@ -6,6 +6,7 @@ import AppService from './services/appService';
 import React, {useMemo, useEffect} from 'react';
 import MarkupService from './services/markupService';
 import Main from './components/presentation/main/Main';
+import NotFound from './components/presentation/not-found/NotFound';
 
 
 const App = () => {
@@ -21,7 +22,8 @@ const App = () => {
     <Context.Provider value={{appService, markupService}}>
       <Frame>
         <Routes>   
-          <Route path={'/'} element={<Main/>}/>       
+          <Route path={'/'} element={<Main/>}/>
+          <Route path={'*'} element={<NotFound/>}/>       
         </Routes>
       </Frame>
     </Context.Provider>

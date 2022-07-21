@@ -28,4 +28,11 @@ export default class MarkupService {
         };
     };
 
+    notFoundHeadingTemplate() {
+        return {
+            subtitle: this.appService.checkLanguage(this.language) ? 'Страница не найдена' : 'Page not found',
+            title: this.appService.checkLanguage(this.language) ? 'Что-то пошло не так!' : 'Something went wrong!',
+        };
+    };
+
 };
