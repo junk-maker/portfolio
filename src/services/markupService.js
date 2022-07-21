@@ -8,7 +8,9 @@ export default class MarkupService {
 
     headerHeadingTemplate() {
         return {
-            link: '/portfolio',
+            back: '/',
+            forward: '/portfolio',
+            exit: this.appService.checkLanguage(this.language) ? 'Выход' : 'Exit',
             portfolio: this.appService.checkLanguage(this.language) ? 'Портфолио' : 'Portfolio',
         };
     };
@@ -35,4 +37,10 @@ export default class MarkupService {
         };
     };
 
+    portfolioHeadingTemplate() {
+        return {
+            'budget-link': '/portfolio/budget',
+            budget: this.appService.checkLanguage(this.language) ? 'Budget App' : 'Budget App',
+        };
+    };
 };

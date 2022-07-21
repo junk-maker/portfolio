@@ -1,0 +1,23 @@
+.portfolio {
+    height: 31em;
+    position: relative;
+    background-color: $color-black;
+    font-family: $font-family-primary;
+    &__budget {
+        top: 20%;
+        left: 10%;
+        width: 17.6em;
+        height: 15.6em;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+        border-radius: 0.5em;
+        background-color: $color-white;
+    }
+    &__heading {
+        top: 35%;
+        font-size: 2.2em;
+        position: relative;
+        color: $color-black;
+    }
+}
