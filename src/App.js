@@ -6,6 +6,7 @@ import AppService from './services/appService';
 import React, {useMemo, useEffect} from 'react';
 import MarkupService from './services/markupService';
 import Main from './components/presentation/main/Main';
+import Budget from './components/presentation/app/budget/Budget';
 import NotFound from './components/presentation/not-found/NotFound';
 import Portfolio from './components/presentation/portfolio/Portfolio';
 
@@ -25,6 +26,7 @@ const App = () => {
         <Routes>   
           <Route path={'/'} element={<Main/>}/>
           <Route path={'/portfolio'} element={<Portfolio/>}/>
+          <Route path={'/portfolio/budget'} element={<Budget/>}/>
           <Route path={'*'} element={<NotFound/>}/>       
         </Routes>
       </Frame>

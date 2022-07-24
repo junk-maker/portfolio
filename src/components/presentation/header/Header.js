@@ -5,9 +5,8 @@ import {Link} from 'react-router-dom';
 
 
 const Header = ({type, markupService}) => {
-    
     return (
-        <header className={'header'}>
+        <header id={'anchor'} className={'header'}>
             <div className={'header__portfolio'}>
                 <Link style={{textDecoration: 'none'}} to={markupService.headerHeadingTemplate()[type === undefined ? 'forward' : 'back']}>
                     <span className={'header__heading'}>

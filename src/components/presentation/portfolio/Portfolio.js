@@ -1,8 +1,8 @@
+import {Link} from 'react-router-dom';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import React, {useContext} from 'react';
 import Context from '../../../context/Context';
-import {Link} from 'react-router-dom';
 
 
 const Portfolio = () => {
@@ -19,7 +19,7 @@ const Portfolio = () => {
                             {markupService.portfolioHeadingTemplate()['budget']}
                         </span>
                     </div>
-                    </Link>
+                </Link>
             </section>
 
             <Footer markupService={markupService}/>
